@@ -1,4 +1,4 @@
-﻿using Sandbox;
+using Sandbox;
 using Sandbox.UI;
 using Sandbox.UI.Construct;
 
@@ -12,8 +12,8 @@ namespace MelonSimulator
 			{
 
 				RootPanel.AddChild<NameTags>();
-				RootPanel.AddChild<CrosshairCanvas>();
-				CrosshairCanvas.SetCrosshair( RootPanel.AddChild<StandardCrosshair>() );
+				//RootPanel.AddChild<CrosshairCanvas>();
+				//CrosshairCanvas.SetCrosshair( RootPanel.AddChild<StandardCrosshair>() );
 				RootPanel.AddChild<ChatBox>();
 				RootPanel.AddChild<VoiceList>();
 				RootPanel.AddChild<KillFeed>();
@@ -23,7 +23,7 @@ namespace MelonSimulator
 				tipContainer.StyleSheet.Load( "/MelonHud.scss" );
 				tipContainer.SetClass( "tipContainer", true );
 				var tipTitle = tipContainer.AddChild<Label>( "tipText tipTitle" );
-				tipTitle.Text = "Melon Simulator";
+				tipTitle.Text = "melon.";
 				var tipBody = tipContainer.AddChild<Label>( "tipText tipBody" );
 				tipBody.Text = "Fulfill your purpose as a melon and fill the map with your melon-y goodness.\n\nMouse1 - Explode\nMouse2 - Attract Gibs\nMouse3 - Delete Gibs";
 			}
